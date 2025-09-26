@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #3a86ff;
+    --secondary: #8338ec;
+    --accent: #ff006e;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --card-bg: rgba(255, 255, 255, 0.15);
+    --text-color: #333;
+    --gradient-start: #667eea;
+    --gradient-end: #764ba2;
+}
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    color: var(--light);
+}
+
+/* Main wrapper */
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Search area */
+.search-box {
+    
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Weather container */
+.primary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    min-height: 250px;   /* allows shrinking */
+    max-width: 90%;      /* responsive width */
+    width: 500px;        /* preferred size */
+    text-align: center;
+}
+
+/* Input field */
+input {
+     background: var(--card-bg);
+    padding: 12px 20px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 200px;
+}
+input:active{
+    background-color: ;
+}
+/* Button */
+button {
+    background-color: var(--primary);
+    color:var(--light);
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    border-radius:80px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
