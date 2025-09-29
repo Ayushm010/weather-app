@@ -17,6 +17,7 @@ document.querySelector(".search").addEventListener("click", async () => {
         console.log(result);
         renderWeatherUi(result);
     }catch(err){
+      
         console.log(err);
     }
 });

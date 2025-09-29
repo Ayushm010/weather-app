@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Ayushm010/weather-app#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.4",
