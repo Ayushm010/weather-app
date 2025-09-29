@@ -4,8 +4,6 @@ export async function gateData(location) {
         const response = await fetch(url);
          return await response.json();
     }catch(err){
-        alert("location not found");
-        console.log(err);
         return err;
     }
 }
