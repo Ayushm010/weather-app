@@ -40,16 +40,17 @@ body {
     grid-template-columns: 3fr 1fr;
     justify-content: space-between;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .left-header {
-    margin-left: clamp(10px,30px,40px);
+    margin-left: 10px;
     justify-self: start;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: clamp(0.8rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
     font-weight: 600;
     text-align: center;
     color: var(--light);
@@ -57,7 +58,7 @@ body {
 }
 
 .right-header {
-    margin-right: 30px;
+    margin-right: 10px;
     justify-self: self-end;
 }
 
@@ -106,7 +107,9 @@ body {
     backdrop-filter: blur(10px);
 }
 
-
+.primary-container:hover{
+    transform: translateY(-5px) scale(1.02);
+}
 /* Input field */
 input {
     background: var(--card-bg);
@@ -174,7 +177,7 @@ button:hover {
 
 /* Forecast container */
 .forecast {
-    font-size: clamp(0.8rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
     font-weight: 600;
     text-align: center;
     color: var(--light);
@@ -208,6 +211,9 @@ button:hover {
     min-height: 180px;
 }
 
+.forecast-wrapper:hover{
+     transform: translatey(-5px) scale(1.02);
+}
 /* Forecast icons */
 .forecast-icons {
     width: clamp(50px, 10vw, 80px);
@@ -226,4 +232,9 @@ button:hover {
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     color: var(--light);
     opacity: 0.9;
+}
+
+/* Button hover */
+button:hover{
+     transform: translatex(-5px) scale(1.02);
 }
